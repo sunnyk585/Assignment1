@@ -1,8 +1,6 @@
 TARGET   = final
 
 CC       = gcc
-# compiling flags here
-CFLAGS   = -I$(INCDIR)
 
 LINKER   = gcc
 # linking flags here
@@ -12,6 +10,8 @@ SRCDIR   = src
 OBJDIR   = obj
 BINDIR   = bin
 INCDIR   = inc
+
+CFLAGS   = -I$(INCDIR)
 
 SOURCES  := $(wildcard $(SRCDIR)/*.c)
 INCLUDES := $(wildcard $(INCDIR)/*.h)
